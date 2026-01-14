@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Account Deletion | Bheem Bharat</title>
+    <title>Bheem Bharat | Legal Pages</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./bheem-bharat-logo.png" />
 
@@ -53,28 +53,46 @@
         font-size: 14px;
       }
 
-      /* PAGE */
+      /* PAGE CONTENT */
       .content {
         max-width: 900px;
         margin: auto;
         padding: 120px 20px 60px;
+        text-align: center;
       }
 
       h1 {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
       }
 
-      h2 {
-        margin-top: 28px;
-      }
-
-      p,
-      li {
+      p {
+        margin-bottom: 32px;
         line-height: 1.7;
       }
 
-      ol {
-        padding-left: 20px;
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+      }
+
+      .card {
+        background: #ffffff;
+        padding: 28px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      }
+
+      .card h2 {
+        margin-top: 0;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 16px;
+        text-decoration: none;
+        font-weight: 600;
+        color: #2563eb;
       }
     </style>
   </head>
@@ -92,46 +110,36 @@
     </header>
 
     <main class="content">
-      <h1>Account & Profile Deletion Policy</h1>
-
-      <h2>In-App Account Deletion</h2>
+      <h1>Bheem Bharat – Legal & Policy Pages</h1>
       <p>
-        Users can delete their account directly from within the Bheem Bharat app
-        by following the steps below:
-      </p>
-      <ol>
-        <li>Open the Bheem Bharat app</li>
-        <li>Go to the <b>Profile</b> section</li>
-        <li>Scroll to the bottom of the Profile page</li>
-        <li>Tap on <b>Delete Account</b></li>
-        <li>Confirm the deletion request</li>
-      </ol>
-
-      <h2>Web-Based Deletion Request</h2>
-      <p>
-        If you are unable to access the app, you can request account deletion by
-        emailing us from your registered email or phone number.
+        This page provides access to Bheem Bharat’s official legal documents,
+        including our Privacy Policy, Terms & Conditions, and Account Deletion
+        instructions.
       </p>
 
-      <h2>Data Deleted</h2>
-      <ul>
-        <li>Personal information</li>
-        <li>Matrimony profile details</li>
-        <li>Chats, interactions, and activity data</li>
-        <li>Notification tokens and device identifiers</li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <h2>Privacy Policy</h2>
+          <p>Learn how we collect, use, and protect your personal data.</p>
+          <a href="./privacy-policy.html">View Privacy Policy →</a>
+        </div>
 
-      <h2>Retention Period</h2>
-      <p>
-        All associated personal data is permanently deleted within
-        <b>7–14 working days</b> after confirmation.
-      </p>
+        <div class="card">
+          <h2>Terms & Conditions</h2>
+          <p>
+            Understand the rules and responsibilities of using Bheem Bharat.
+          </p>
+          <a href="./terms-and-conditions.html">View Terms →</a>
+        </div>
 
-      <h2>Contact</h2>
-      <p>
-        Email: <b>bharatbheem580@gmail.com</b><br />
-        Phone: <b>+91 90265 40491</b>
-      </p>
+        <div class="card">
+          <h2>Delete Account</h2>
+          <p>
+            Instructions to permanently delete your account and personal data.
+          </p>
+          <a href="./account-deletion.html">Delete Account →</a>
+        </div>
+      </div>
     </main>
   </body>
 </html>
